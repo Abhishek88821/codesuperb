@@ -10,7 +10,7 @@ $("#par-div_sli").owlCarousel({
     responsiveClass: true,
     responsive: {
       0: {
-        items: 5,
+        items: 2.4,
         nav: false,
         dots: false,
       },
@@ -27,31 +27,36 @@ $("#par-div_sli").owlCarousel({
     },
   });
 
-  $('#par-div_sli').trigger('play.owl.autoplay',[5000]);
-  
+  $('#par-div_sli').trigger('play.owl.autoplay',[8000]);
 /* blog start */
 $("#tst-div_sli").owlCarousel({
   loop: true,
+  autoplay: false,
+  margin: 20,
+  slideTransition: 'linear',
+  autoplaySpeed: 8000,
+  smartSpeed: 5000,
+  center: true,
+  navText: ['<i class="fa-solid fa-arrow-left"></i>', '<i class="fa-solid fa-arrow-right"></i>'],
   responsiveClass: true,
-  autoplay: true,
   responsive: {
     0: {
-      items: 1,
-      nav: false,
+      items: 1.2,
+      nav: true,
     },
     600: {
-      items: 2,
-      nav: false,
+      items: 2.3,
+      nav: true,
     },
     1000: {
-      items: 3,
-      nav: false,
-      loop: false,
-      margin: 20,
+      items: 2.5,
+      nav: true,
     },
   },
 });
 
+
+$('#tst-div_sli').trigger('play.owl.autoplay',[8000]);
 
 $("#blg-div_sli").owlCarousel({
   loop: true,
@@ -60,7 +65,7 @@ $("#blg-div_sli").owlCarousel({
   responsiveClass: true,
   responsive: {
     0: {
-      items: 1,
+      items: 1.1,
       nav: false,
       dots: true,
     },
