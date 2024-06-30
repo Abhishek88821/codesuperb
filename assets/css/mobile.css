@@ -1,7 +1,7 @@
 @media screen and (max-width: 768px) {
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 991px) {
   /* fonts start */
   .abt-div_box li span {
     font-size: 40px;
@@ -173,16 +173,13 @@
     margin: -20px auto 30px;
   }
   section.abt-div::before {
-    top: 15%;
-    left: 0;
-    width: 120px;
-    height: 120px;
-    background: #2474ff;
-    filter: blur(40px);
-    mix-blend-mode: soft-light;
-    backdrop-filter: blur(99px);
-    display: none;
-  }
+        top: 90px;
+        left: 0;
+        width: 120px;
+        height: 120px;
+        background: #24f8fffa;
+        border-radius: 100%;
+    }
   section.abt-div::after {
     bottom: 0;
     right: 0;
@@ -323,13 +320,17 @@ section.inn-div::before {
 }
 
 .abt-div_img::before {
-  height: 200px;
-  width: 200px;
+  height: 300px;
+  width: 300px;
+  background: #2140f338;
 }
 
 .abt-div_img::after {
-  font-size: 45px;
-  line-height: 47px;
+    font-size: 22px;
+        right: 34px;
+        padding: 2px 20px;
+        font-weight: 300;
+        transform: skew(-5deg, 0deg);
 }
 
 }
