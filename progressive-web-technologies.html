@@ -10,6 +10,7 @@
     <meta name="Robots" content="index,follow" />
      <link rel="shortcut icon" href="assets/img/favicon.png" >
     <link href="assets/css/credible.css" rel="Stylesheet" type="text/css" />
+    <link href="assets/css/mobile.css" rel="Stylesheet" type="text/css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -19,8 +20,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css" type="text/css" rel="Stylesheet" />
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
-
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/fontawesome.min.js" integrity="sha512-1M9vud0lqoXACA9QaA8IY8k1VR2dMJ2Qmqzt9pN2AH7eQHWpNsxBpaayV0kKkUsF7FLVQ2sA2SSc8w5VOm7/mg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
   </head>
 
   <body>
@@ -28,21 +27,19 @@
     <nav class="navbar navbar-expand-lg py-lg-3">
         <div class="container">
           <a class="navbar-brand my-0 py-0" href="index.html" role="button">
-            <!-- <img src="https://www.ducoconsultancy.com/wp-content/uploads/2023/08/duco_logo.svg"
-                      class="img-fluid w-100" alt="DC" /> -->
             <span class="">Credible.</span>
           </a>
           <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
+          class="navbar-toggler border-0 p-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+        <img src="assets/img/icons/menu.svg" class="img-fluid menu_icn w-100" alt="Menu" />
+        </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav align-items-center ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
@@ -51,13 +48,11 @@
               <li class="nav-item">
                 <a class="nav-link" role="button"  href="services.html">Services</a>
               </li>
-              <li class="nav-item dropdown">
+              <li class="nav-item">
                 <a
                   class="nav-link"
                   href="porfolio.html"
                   role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
                 >
                   Portfolio
                 </a>
@@ -83,21 +78,21 @@
       </nav>
     <!-- header end -->
     <!-- about start -->
-    <section class="abt-div abt-div_inn py-60">
+    <section class="inn-div py-60">
       <div class="container">
         <div class="row">
           <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-            <div class="abt-div_tit">
-              <h2 class="mb-lg-4" >Progressive Web Technologies</h2>
-              <p class="mb-lg-3 mt-lg-2" >Embrace the future of web development with our progressing web technologies services. Our team of experts specializes in leveraging the latest advancements in web technology to create dynamic and engaging digital experiences for your users.
+            <div class="inn-div_tit mb-md-5 mb-4">
+              <h2 class="mb-lg-4 mb-3" >Progressive Web Technologies</h2>
+              <p class="mb-lg-3 mt-lg-2 mt-2 mb-3" >Embrace the future of web development with our progressing web technologies services. Our team of experts specializes in leveraging the latest advancements in web technology to create dynamic and engaging digital experiences for your users.
               </p>
-              <p class="mb-lg-3">
+              <p class="mb-lg-3 mb-3">
                 From responsive design that ensures your website looks and performs flawlessly on any device, to progressive web apps that offer the speed and reliability of native applications, we deliver innovative solutions that drive results. Whether you're looking to refresh your existing website or build a new one from scratch, we have the expertise and creativity to bring your vision to life.
               </p>
-              <p class="mb-lg-3">
+              <p class="mb-lg-3 mb-3">
                 With a focus on usability, accessibility, and performance, we ensure that your web presence not only meets but exceeds user expectations. Our holistic approach to web development takes into account factors such as user experience, search engine optimization, and scalability, ensuring that your website stands out in today's competitive digital landscape.
               </p>
-              <p class="mb-lg-3">
+              <p class="mb-lg-3 mb-3">
                 Partner with us to harness the power of progressing web technologies and take your online presence to new heights.                
               </p>
             </div>
@@ -106,229 +101,375 @@
       </div>
     </section>
     <!-- about end -->  
-    <!-- footer start -->
-    <footer class="foo-div">
-      <div class="container">
-        <div class="row pb-lg-5 pb-xl-5">
-          <div class="col-xl-2 col-lg-3 col-md-3 col-sm-6 col-6">
-            <div class="foo-div_lst">
+ <!-- footer start -->
+ <footer class="foo-div">
+  <div class="container">
+    <div class="row d-sm-flex d-none pb-lg-5 pb-xl-5">
+      <div class="col-xl-2 col-lg-3 col-md-3 col-sm-6 col-6">
+        <div class="foo-div_lst">
+          <h5 class="mb-lg-3 mb-3" >INDUSTRIES</h5>
+          <ul class="list-unstyled">
+            <li>
+              <a href="javascript:void(0)" class="text-decoration-none" role="button">Financial Services</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)" class="text-decoration-none" role="button">Healthcare</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)" class="text-decoration-none" role="button">Logistics</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)" class="text-decoration-none" role="button">Travel & Hospitality</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)" class="text-decoration-none" role="button">Manufacturing</a>
+            </li>
+                            <li>
+              <a href="javascript:void(0)" class="text-decoration-none" role="button">Real Estate</a>
+            </li>
+                         <li>
+              <a href="javascript:void(0)" class="text-decoration-none" role="button">Non-profit</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-xl-3 offset-xl-1 col-lg-3 col-md-3 col-sm-6 col-6">
+        <div class="foo-div_lst">
+          <h5 class="mb-lg-3 mb-3">SERVICES</h5>
+          <ul class="list-unstyled">
+            <li>
+              <a href="progressive-web-technologies.html" class="text-decoration-none" role="button">Progressing Web Technologies</a>
+            </li>
+            <li>
+              <a href="cloud-transformation.html" class="text-decoration-none" role="button">Cloud
+                Transformation</a>
+            </li>
+            <li>
+              <a href="enterprise-solutions.html" class="text-decoration-none" role="button">Enterprise Resource
+                Planning</a>
+            </li>
+            <li>
+              <a href="crm.html" class="text-decoration-none" role="button">Customer Relationship Management</a>
+            </li>
+                            <li>
+              <a href="data-analytics.html" class="text-decoration-none" role="button">Data and
+                Analytics</a>
+            </li>
+            <li>
+              <a href="ecommerce.html" class="text-decoration-none" role="button">Ecommerce and
+                CMS</a>
+            </li>
+            <li>
+              <a href="mobility.html" class="text-decoration-none" role="button">Mobility
+                Solutions</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-xl-2 offset-xl-1 col-lg-2 col-md-2 col-sm-6 col-6">
+        <div class="foo-div_lst">
+          <h5 class="mb-lg-3 mb-3" >TECH STACK</h5>
+          <ul class="list-unstyled">
+              <li>
+              <a href="https://wordpress.com/" target="_blank" class="text-decoration-none" role="button">Wordpress</a>
+            </li>
+            <li>
+              <a href="https://www.shopify.com/" target="_blank" class="text-decoration-none" role="button">Shopify</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)" class="text-decoration-none" role="button">Back-end</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)" class="text-decoration-none" role="button">Front-end</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)" class="text-decoration-none" role="button">PHP</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)" class="text-decoration-none" role="button">Angular</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)" class="text-decoration-none" role="button">Figma</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)" class="text-decoration-none" role="button">React</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+<div class="col-xl-2 offset-xl-1 offset-lg-1 col-lg-2 col-md-2 col-sm-6 col-6">
+        <div class="foo-div_lst">
+          <h5 class="mb-lg-3 mb-3" >COMPANY</h5>
+          <ul class="list-unstyled">
+              <li>
+              <a href="about.html" class="text-decoration-none" role="button">About</a>
+            </li>
+            <li>
+              <a href="porfolio.html" class="text-decoration-none" role="button">Portfolio</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)" class="text-decoration-none" role="button">Testimonials</a>
+            </li>
+            <li>
+              <a href="blog.html" class="text-decoration-none" role="button">Blogs</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)" class="text-decoration-none" role="button">Join Us</a>
+            </li>
+            <li>
+              <a href="contact.html" class="text-decoration-none" role="button">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+    <div class="row d-sm-none d-block pb-3" >
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item foo-div_lst ">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
               <h5 class="mb-lg-3 mb-3" >INDUSTRIES</h5>
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body foo-div_lst mb-4">
               <ul class="list-unstyled">
                 <li>
-                  <a href="" class="text-decoration-none" role="button">Financial Services</a>
+                  <a href="javascript:void(0)" class="text-decoration-none" role="button">Financial Services</a>
                 </li>
                 <li>
-                  <a href="" class="text-decoration-none" role="button">Healthcare</a>
+                  <a href="javascript:void(0)" class="text-decoration-none" role="button">Healthcare</a>
                 </li>
                 <li>
-                  <a href="" class="text-decoration-none" role="button">Logistics</a>
+                  <a href="javascript:void(0)" class="text-decoration-none" role="button">Logistics</a>
                 </li>
                 <li>
-                  <a href="" class="text-decoration-none" role="button">Travel & Hospitality</a>
+                  <a href="javascript:void(0)" class="text-decoration-none" role="button">Travel & Hospitality</a>
                 </li>
                 <li>
-                  <a href="#" class="text-decoration-none" role="button">Manufacturing</a>
+                  <a href="javascript:void(0)" class="text-decoration-none" role="button">Manufacturing</a>
                 </li>
                                 <li>
-                  <a href="#" class="text-decoration-none" role="button">Real Estate</a>
+                  <a href="javascript:void(0)" class="text-decoration-none" role="button">Real Estate</a>
                 </li>
-
-                                  <li>
-                  <a href="#" class="text-decoration-none" role="button">Retail</a>
-                </li>
-
-                                  <li>
-                  <a href="#" class="text-decoration-none" role="button">Non-profit</a>
+                             <li>
+                  <a href="javascript:void(0)" class="text-decoration-none" role="button">Non-profit</a>
                 </li>
               </ul>
             </div>
           </div>
-          <div class="col-xl-3 offset-xl-1 col-lg-3 col-md-3 col-sm-6 col-6">
-            <div class="foo-div_lst">
-              <h5 class="mb-lg-3 mb-3">SERVICES</h5>
+        </div>
+
+        <div class="accordion-item foo-div_lst ">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseOne">
+              <h5 class="mb-lg-3 mb-3" >SERVICES</h5>
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body foo-div_lst mb-4">
               <ul class="list-unstyled">
                 <li>
-                  <a href="" class="text-decoration-none" role="button">Progressing Web Technologies</a>
+                  <a href="progressive-web-technologies.html" class="text-decoration-none" role="button">Progressing Web Technologies</a>
                 </li>
                 <li>
-                  <a href="" class="text-decoration-none" role="button">Cloud
+                  <a href="cloud-transformation.html" class="text-decoration-none" role="button">Cloud
                     Transformation</a>
                 </li>
                 <li>
-                  <a href="" class="text-decoration-none" role="button">Enterprise Resource
+                  <a href="enterprise-solutions.html" class="text-decoration-none" role="button">Enterprise Resource
                     Planning</a>
                 </li>
                 <li>
-                  <a href="" class="text-decoration-none" role="button">Customer Relationship Management</a>
+                  <a href="crm.html" class="text-decoration-none" role="button">Customer Relationship Management</a>
                 </li>
                                 <li>
-                  <a href="" class="text-decoration-none" role="button">Data and
+                  <a href="data-analytics.html" class="text-decoration-none" role="button">Data and
                     Analytics</a>
                 </li>
                 <li>
-                  <a href="#" class="text-decoration-none" role="button">Ecommerce and
+                  <a href="ecommerce.html" class="text-decoration-none" role="button">Ecommerce and
                     CMS</a>
                 </li>
                 <li>
-                  <a href="#" class="text-decoration-none" role="button">Mobility
+                  <a href="mobility.html" class="text-decoration-none" role="button">Mobility
                     Solutions</a>
                 </li>
-              </ul>
+             </ul>
+     
             </div>
           </div>
-          <div class="col-xl-2 offset-xl-1 col-lg-2 col-md-2 col-sm-6 col-6">
-            <div class="foo-div_lst">
+        </div>
+
+        <div class="accordion-item foo-div_lst ">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseOne">
               <h5 class="mb-lg-3 mb-3" >TECH STACK</h5>
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body foo-div_lst mb-4">
               <ul class="list-unstyled">
-                  <li>
-                  <a href="" class="text-decoration-none" role="button">Wordpress</a>
-                </li>
                 <li>
-                  <a href="" class="text-decoration-none" role="button">Shopify</a>
-                </li>
-                <li>
-                  <a href="" class="text-decoration-none" role="button">Back-end</a>
-                </li>
-                <li>
-                  <a href="" class="text-decoration-none" role="button">Front-end</a>
-                </li>
-                <li>
-                  <a href="" class="text-decoration-none" role="button">PHP</a>
-                </li>
-                <li>
-                  <a href="" class="text-decoration-none" role="button">Angular</a>
-                </li>
-                <li>
-                  <a href="" class="text-decoration-none" role="button">Figma</a>
-                </li>
-                <li>
-                  <a href="" class="text-decoration-none" role="button">React</a>
-                </li>
-              </ul>
+                <a href="https://wordpress.com" target="_blank" class="text-decoration-none" role="button">Wordpress</a>
+              </li>
+              <li>
+                <a href="https://www.shopify.com/" target="_blank" class="text-decoration-none" role="button">Shopify</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)"  class="text-decoration-none" role="button">Back-end</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)"  class="text-decoration-none" role="button">Front-end</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)"  class="text-decoration-none" role="button">PHP</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)"  class="text-decoration-none" role="button">Angular</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)"  class="text-decoration-none" role="button">Figma</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)"  class="text-decoration-none" role="button">React</a>
+              </li>
+            </ul>
+         
             </div>
           </div>
+        </div>
 
-<div class="col-xl-2 offset-xl-1 offset-lg-1 col-lg-2 col-md-2 col-sm-6 col-6">
-            <div class="foo-div_lst">
+        <div class="accordion-item foo-div_lst ">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseOne">
               <h5 class="mb-lg-3 mb-3" >COMPANY</h5>
+            </button>
+          </h2>
+          <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body foo-div_lst mb-4">
               <ul class="list-unstyled">
-                  <li>
-                  <a href="" class="text-decoration-none" role="button">About</a>
+                <li>
+                  <a href="about.html" class="text-decoration-none" role="button">About</a>
                 </li>
                 <li>
-                  <a href="" class="text-decoration-none" role="button">Insights</a>
+                  <a href="porfolio.html" class="text-decoration-none" role="button">Portfolio</a>
                 </li>
                 <li>
-                  <a href="" class="text-decoration-none" role="button">Testimonials</a>
+                  <a href="javascript:void(0)" class="text-decoration-none" role="button">Testimonials</a>
                 </li>
                 <li>
-                  <a href="" class="text-decoration-none" role="button">GTC</a>
+                  <a href="blog.html" class="text-decoration-none" role="button">Blogs</a>
                 </li>
                 <li>
-                  <a href="" class="text-decoration-none" role="button">Join Us</a>
+                  <a href="javascript:void(0)" class="text-decoration-none" role="button">Join Us</a>
                 </li>
                 <li>
-                  <a href="" class="text-decoration-none" role="button">Contact Us</a>
+                  <a href="contact.html" class="text-decoration-none" role="button">Contact Us</a>
                 </li>
-              </ul>
+            </ul>
             </div>
           </div>
+        </div>
 
+      </div>
+    </div>
+    <div class="row foo-div_con bt-1  pb-lg-5 pt-lg-5 py-4">
+      <div class="col-xl-12 col-lg-12" >
+        <h5 class="mb-lg-3 mb-3" >CONTACT US</h5>
+      </div>
+      <div class="col-xl-4 col-lg-4"> 
+        <div class="foo-div_con_lst position-relative d-flex align-items-start" >
+          <div class="foo-div_cnt_lst_icn" >
+          <i class="fa-solid fa-mobile-screen-button"></i>
         </div>
-        <div class="row foo-div_con bt-1  pb-lg-5 pt-lg-5">
-          <div class="col-xl-12 col-lg-12" >
-            <h5 class="mb-lg-3 mb-3" >CONTACT US</h5>
-          </div>
-          <div class="col-xl-4 col-lg-4"> 
-            <div class="foo-div_con_lst position-relative d-flex align-items-start" >
-              <div class="foo-div_cnt_lst_icn" >
-              <i class="fa-solid fa-mobile-screen-button"></i>
-            </div>
-            <div class="foo-div_cnt_lst_nme ms-2" >
-              <p class="d-none" >Phone</p>
-              <span>+91(995) 875-5444</span>
-            </div>
-            </div>
-          </div>
-          <div class="col-xl-4 col-lg-4"> 
-            <div class="foo-div_con_lst position-relative d-flex align-items-start" >
-              <div class="foo-div_cnt_lst_icn" >
-                <i class="fa-solid fa-envelope"></i>
-            </div>
-            <div class="foo-div_cnt_lst_nme ms-2" >
-              <p class="d-none">eMail</p>
-              <span>info@crediblesolutions.com</span>
-            </div>
-            </div>
-          </div>
-          <div class="col-xl-4 col-lg-4"> 
-            <div class="foo-div_con_lst position-relative d-flex align-items-start" >
-              <div class="foo-div_cnt_lst_icn" >
-                <i class="fa-solid fa-location-dot"></i>
-            </div>
-            <div class="foo-div_cnt_lst_nme ms-2" >
-              <p class="d-none">Office Address</p>
-              <span>419-424, 4th Floor, JMD Megapolis, Sohna Rd Hwy, Sector 48,
+        <div class="foo-div_cnt_lst_nme ms-2" >
+          <p class="d-none" >Phone</p>
+          <span>+91(995) 875-5444</span>
+        </div>
+        </div>
+      </div>
+      <div class="col-xl-4 col-lg-4"> 
+        <div class="foo-div_con_lst position-relative d-flex align-items-start" >
+          <div class="foo-div_cnt_lst_icn" >
+            <i class="fa-solid fa-envelope"></i>
+        </div>
+        <div class="foo-div_cnt_lst_nme ms-2" >
+          <p class="d-none">eMail</p>
+          <span>info@crediblesolutions.com</span>
+        </div>
+        </div>
+      </div>
+      <div class="col-xl-4 col-lg-4"> 
+        <div class="foo-div_con_lst position-relative d-flex align-items-start" >
+          <div class="foo-div_cnt_lst_icn" >
+            <i class="fa-solid fa-location-dot"></i>
+        </div>
+        <div class="foo-div_cnt_lst_nme ms-2" >
+          <p class="d-none">Office Address</p>
+          <span>419-424, 4th Floor, JMD Megapolis, Sohna Rd Hwy, Sector 48,
 Gurugram, Haryana- 122018</span>
-            </div>
-            </div>
-          </div>
         </div>
-        <div class="row foo-div_cpy align-items-md-center">
-          <div class="col-xl-6 col-lg-6">
-            <div class="foo-div_cpy_lnk" >
-            <p class="mb-0" >Copyright &copy; 2024 &nbsp;- &nbsp;CREDIBLE SOLUTION.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" class="text-decoration-underline text-white pe-2" role="button">Privacy Policy</a> | <a href="#" class="text-decoration-underline ps-2 text-white" role="button">Term & Condition</a> </p>
-            </div>
-          </div>
-          <div class="col-xl-6 col-lg-6">
-            <div class="foo-div_soc">
-              <ul class="d-flex align-items-center list-unstyled mb-0" >
-                <li>
-                  <a href="#" class="text-decoration-none" role="button" >
-                    <i class="fa-brands fa-facebook"></i>
-                  </a>
+        </div>
+      </div>
+    </div>
+    <div class="row foo-div_cpy align-items-md-center">
+      <div class="col-xl-6 col-lg-6">
+        <div class="foo-div_cpy_lnk" >
+        <p class="mb-md-0 mb-2" >Copyright &copy; 2024 &nbsp;- &nbsp;CREDIBLE SOLUTION.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="javascript:void(0)" class="text-decoration-underline text-white pe-2" role="button">Privacy Policy</a> | <a href="javascript:void(0)" class="text-decoration-underline ps-2 text-white" role="button">Term & Condition</a> </p>
+        </div>
+      </div>
+      <div class="col-xl-6 col-lg-6">
+        <div class="foo-div_soc">
+          <ul class="d-flex align-items-center list-unstyled mb-0" >
+            <li>
+              <a href="javascript:void(0)" class="text-decoration-none" role="button" >
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0)" class="text-decoration-none" role="button" >
+                <i class="fa-brands fa-x-twitter"></i>
+                </a>
                 </li>
                 <li>
-                  <a href="#" class="text-decoration-none" role="button" >
-                    <i class="fa-brands fa-x-twitter"></i>
+                  <a href="javascript:void(0)" class="text-decoration-none" role="button" >
+                    <i class="fa-brands fa-instagram"></i>
                     </a>
                     </li>
                     <li>
-                      <a href="#" class="text-decoration-none" role="button" >
-                        <i class="fa-brands fa-instagram"></i>
+                      <a href="javascript:void(0)" class="text-decoration-none" role="button" >
+                        <i class="fa-brands fa-linkedin"></i>
                         </a>
                         </li>
                         <li>
-                          <a href="#" class="text-decoration-none" role="button" >
-                            <i class="fa-brands fa-linkedin"></i>
+                          <a href="javascript:void(0)" class="text-decoration-none" role="button" >
+                            <i class="fa-brands fa-youtube"></i>
                             </a>
                             </li>
-                            <li>
-                              <a href="#" class="text-decoration-none" role="button" >
-                                <i class="fa-brands fa-youtube"></i>
-                                </a>
-                                </li>
-                
-              </ul>
-            </div>
-          </div>
+            
+          </ul>
         </div>
       </div>
-    </footer>
-    <!-- footer end -->
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
+    </div>
+  </div>
+</footer>
+<!-- footer end -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+  crossorigin="anonymous"
+></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js" integrity="sha512-GWzVrcGlo0TxTRvz9ttioyYJ+Wwk9Ck0G81D+eO63BaqHaJ3YZX9wuqjwgfcV/MrB2PhaVX9DkYVhbFpStnqpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js" integrity="sha512-GWzVrcGlo0TxTRvz9ttioyYJ+Wwk9Ck0G81D+eO63BaqHaJ3YZX9wuqjwgfcV/MrB2PhaVX9DkYVhbFpStnqpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
 
-    <script type="text/javascript" src="assets/js/credible.js" ></script>
-  </body>
+<script type="text/javascript" src="assets/js/credible.js" ></script>
+</body>
 </html>
