@@ -337,6 +337,12 @@ a.navbar-brand > span {
   /* border-bottom-right-radius: 40px;
   border-bottom-left-radius: 40px; */
 }
+
+.her-div_cnt h1 > span, .her-div_cnt h1 {
+    z-index: 1;
+    position: relative;
+}
+
 .her-div_cnt {
   width: 800px;
 }
@@ -511,36 +517,37 @@ a.navbar-brand > span {
     background: #fff;
     filter: blur(35px);
     z-index: -1;
-    mix-blend-mode: color-dodge;
+    mix-blend-mode: plus-lighter;
 }
 
-section.abt-div::after {
-  ontent: '';
-  position: absolute;
-  bottom: -10%;
-  right: 0;
-  width: 220px;
-  height: 220px;
-  border-radius: 100%;
-  background: #ffffff;
-  filter: blur(86px);
-}
+/*section.abt-div::after {*/
+/*  content: '';*/
+/*  position: absolute;*/
+/*  bottom: -10%;*/
+/*  right: 0;*/
+/*  width: 220px;*/
+/*  height: 220px;*/
+/*  border-radius: 100%;*/
+/*  background: #ffffff;*/
+/*  filter: blur(86px);*/
+/*}*/
 
 .abt-div_img::after {
   content: 'Solution AI Way';
-  position: absolute;
-  left: 0;
-  width: 100%;
-  top: 40%;
-  font-weight: 800;
-  font-size: 77px;
-  text-align: right;
-  z-index: 4;
-  color: #f6f6f696;
-  line-height: 74px;
-  filter: drop-shadow(0px 9px 20px #00000047);
-  font-style: italic;
-  mix-blend-mode: plus-lighter;
+    position: absolute;
+    right: 51px;
+    width: auto;
+    bottom: 22px;
+    font-weight: 100;
+    font-size: 31px;
+    text-align: right;
+    z-index: 4;
+    color: #f6f6f6;
+    filter: drop-shadow(0px 9px 20px #00000047);
+    font-style: italic;
+    background: linear-gradient(to right, #2474FF 0%, #36DC70 100%);
+    padding: 0 30px;
+    transform: skew(5deg, 0deg);
 }
 
 section.abt-div::before {
@@ -807,8 +814,15 @@ filter: brightness(1.1);
 
 .tst-div_box_pro_img {
   width: 55px;
+  height: 55px;
   overflow: hidden;
   border-radius: 100%;
+}
+
+.tst-div_box_pro_img > img {
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
 }
 
 .tst-div_box_pro_tit {
