@@ -1,23 +1,24 @@
 @media screen and (max-width: 768px) {
 }
 
-@media screen and (max-width: 568px) {
+@media screen and (max-width: 768px) {
   /* fonts start */
   .abt-div_box li span {
-    font-size: 30px;
+    font-size: 40px;
   }
   .her-div_cnt h1,
   .her-div_cnt h1 span {
     font-size: 35px;
   }
+
   .abt-div_tit h2,
   .tst-div_tit h2,
   .ser-div_tit h2,
-  .blg-div_tit h2 {
+  .blg-div_tit h2,  .inn-div .inn-div_tit h2  {
     font-size: 24px;
   }
   .ser-div_icn + h3,
-  .tst-div_box_cnt, .blg-div_dtl h6 {
+  .tst-div_box_cnt, .blg-div_dtl h6, .inn-con_div_dtl h4 {
     font-size: 17px;
   }
   .tst-div_box,
@@ -27,23 +28,33 @@
   .ser-div_cnt p,
   .ser-div_tit p,
   .blg-div_tit p,
-  .navbar-nav > li > a,
   .her-div_cnt h1 + span,
-  .log-div li:last-child > a,
-  .foo-div_lst h5,
-  .foo-div_con h5, .blg-div_dtl p {
+  .log-div li:last-child > a, .inn-div .inn-div_tit p,
+  .foo-div_lst h5,.inn-por_div_dtl h6, 
+  .foo-div_con h5, .blg-div_dtl p, .inn-con_div_call a {
     font-size: 15px;
   }
   a.cre-btn,
   .ser-div_btn a,
-  #tst-div_sli .owl-nav button, .blg-div_btn a {
+  #tst-div_sli .owl-nav button, .blg-div_btn a, input[type="button"].cre-btn {
     font-size: 14px;
   }
+
+  .inn-con_div_call b {
+    font-size: 13px;
+  }
+
   /* fonts end */
   .py-60, .par-div .container {
     padding-top: 40px;
     padding-bottom: 40px;
   }
+
+  .par-div .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
   .ser-div_cnt p {
     margin-bottom: 0;
   }
@@ -76,9 +87,40 @@
   }
 
   .ser-div_tit p,
-  .blg-div_tit p {
-    padding: 0;
+  .blg-div_tit p, 
+  .foo-div_lst {
+    padding: 0!important;
   }
+  
+
+  .foo-div_con_lst::before, .log-div::before {
+    display: none;
+  }
+
+  .foo-div_con_lst {
+    padding: 5px 0;
+  }
+
+  .foo-div_soc ul {
+    justify-content: start;
+  }
+
+  .foo-div_soc {
+    margin-top: 8px;
+  }
+
+  .foo-div_cpy_lnk p {
+    margin-top: 0;
+  }
+
+
+  .foo-div .accordion-button::after {
+    filter: invert(1);
+    margin-top: -26px;
+    width: 11px;
+    height: 11px;
+    background-position: center;
+ }
 
   .ser-div_card {
     background-color: transparent !important;
@@ -139,6 +181,7 @@
     filter: blur(40px);
     mix-blend-mode: soft-light;
     backdrop-filter: blur(99px);
+    display: none;
   }
   section.abt-div::after {
     bottom: 0;
@@ -148,6 +191,8 @@
     filter: blur(40px);
     mix-blend-mode: soft-light;
     backdrop-filter: blur(99px);
+    
+    display: none;
   }
 
   section.blg-div::before {
@@ -159,6 +204,8 @@
     filter: blur(40px);
     mix-blend-mode: soft-light;
     backdrop-filter: blur(99px);
+    
+    display: none;
   }
 
   .tst-div_box {
@@ -166,16 +213,123 @@
   }
 
   .foo-div {
-    background-image: none!important    ;
+    padding-top: 40px;
+    background-image: none!important;
     background-color: var(--primary)!important;
   }
+
+  .navbar-toggler {
+    box-shadow: none!important;
+  }
+
   .navbar-toggler svg {
     font-size: 28px;
     color: var(--title);
+    margin-top: -6px;
+    box-shadow: none!important;
+    border: none!important;
  }
  .par-div_lst_img, .par-div_lst_img img {
-    width: 99px;
-    height: 50px;
+  width: 100px !important;
+  height: 80px;
+  text-align: center;
  }
+
+ .par-div_lst {
+  margin: 0 14px;
+ }
+
+ .foo-div  .accordion-item.foo-div_lst {
+  background-color: transparent;
+  border: none;
+}
+.foo-div .accordion-header {
+  background-color: transparent;
+  margin-bottom: 0;
+}
+
+.foo-div button.accordion-button {
+  padding: 0;
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+footer.foo-div::before {
+  width: 150px;
+  height: 150px;
+  filter: blur(150px);
+}
+
+.foo-div_lst h5 {
+  font-weight: 500;
+}
+
+ul.navbar-nav {
+  align-items: flex-start!important;
+  padding-top: 10px;
+}
+
+.navbar-collapse {
+  background: #f6f6f6;
+  border-radius: 0 0 5px 5px;
+  padding: 10px 20px 10px;
+  width: 100%;
+  position: fixed;
+  z-index: 99;
+  top: 60px;
+  left: 0;
+  overflow-y: scroll;
+  box-shadow: 0 10px 10px #455a6421;
+}
+
+.navbar-nav > li > a {
+  padding: 0px 10px 10px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.tst-div_tit p {
+  padding-right: 0!important;
+}
+
+.abt-div_img {
+  padding: 0 10px!important;
+}
+
+.inn-div::after {
+  top: 50px;
+  left: -20px;
+  width: 160px;
+  height: 160px;
+  filter: blur(60px);
+}
+
+section.inn-div::before {
+  width: 120px;
+  height: 120px;
+}
+
+.inn-por_div_lst_img {
+  height: 300px;
+}
+
+.navbar.affix {
+  height: 60px;
+}
+
+.menu_icn {
+  height: 35px!important;
+  filter: hue-rotate(70deg) grayscale(1);
+  margin-top: -4px;
+}
+
+.abt-div_img::before {
+  height: 200px;
+  width: 200px;
+}
+
+.abt-div_img::after {
+  font-size: 45px;
+  line-height: 47px;
+}
 
 }
