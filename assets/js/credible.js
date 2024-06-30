@@ -1,3 +1,8 @@
+$(window).scroll(function() {
+  $(this).scrollTop() > 100 ? ($(".navbar").fadeIn(),
+  $(".navbar").addClass("affix")) : $(".navbar").removeClass("affix")
+});
+
 
 $("#par-div_sli").owlCarousel({
     loop: true,
@@ -10,7 +15,7 @@ $("#par-div_sli").owlCarousel({
     responsiveClass: true,
     responsive: {
       0: {
-        items: 2.4,
+        items: 2.1,
         nav: false,
         dots: false,
       },
@@ -41,7 +46,7 @@ $("#tst-div_sli").owlCarousel({
   responsiveClass: true,
   responsive: {
     0: {
-      items: 1.2,
+      items: 1,
       nav: true,
     },
     600: {
@@ -65,7 +70,7 @@ $("#blg-div_sli").owlCarousel({
   responsiveClass: true,
   responsive: {
     0: {
-      items: 1.1,
+      items: 1,
       nav: false,
       dots: true,
     },
