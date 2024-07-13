@@ -1,3 +1,4 @@
+    $(document).ready(function() {
 $(window).scroll(function() {
   $(this).scrollTop() > 100 ? ($(".navbar").fadeIn(),
   $(".navbar").addClass("affix")) : $(".navbar").removeClass("affix")
@@ -140,3 +141,24 @@ $("#cre-div_sli_2").slick({
   swipeToSlide: true,
   dots: false,
 });
+
+ var lazyloadImages = $("img.lazyload");
+
+ lazyloadImages.each(function() {
+                var img = $(this);
+                var observer = new IntersectionObserver(function(entries) {
+                    entries.forEach(function(entry) {
+                        if (entry.isIntersecting) {
+                            img.attr("src", img.data("src")).on("load", function() {
+                                img.removeClass("lazyload");
+                                img.parent().removeClass('lazyload');
+                                observer.unobserve(img[0]);
+                            });
+                        }
+                    });
+                });
+
+                observer.observe(img[0]);
+            });
+            
+    });

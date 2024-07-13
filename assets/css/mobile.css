@@ -17,6 +17,11 @@
   .blg-div_tit h2,  .inn-div .inn-div_tit h2  {
     font-size: 24px;
   }
+  
+  .inn-div_blg h3 {
+  font-size: 20px;
+  }
+  
   .ser-div_icn + h3,
   .tst-div_box_cnt, .blg-div_dtl h6, .inn-con_div_dtl h4 {
     font-size: 17px;
@@ -331,6 +336,11 @@ section.inn-div::before {
         padding: 2px 20px;
         font-weight: 300;
         transform: skew(-5deg, 0deg);
+}
+
+.lazyload { 
+    width: 16px!important;
+    height: 200px;
 }
 
 }

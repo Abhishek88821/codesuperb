@@ -140,39 +140,39 @@
           <div class="col-xl-8 col-lg-8 col-md-7 col-sm-12 col-12" >
             <div class="inn-con_div_dtl px-lg-5 px-md-4 px-2" >
               <h4 class="mb-md-4 mb-4" >Enquiry Form</h4>
-              <form action="" method="post" class="inn-con_div_frm pt-md-2 pt-2 row" >
+              <form action="/send-contact.php" method="post" class="inn-con_div_frm pt-md-2 pt-2 row" >
                   <div class="col-lg-6 col-md-6 col-12" >
                     <div class="inn-con_div_frm_inp mb-md-3 mb-3" >
                         <label for="name" >Name <span>*</span></label>
-                        <input type="text" placeholder="" id="name" class="form-control w-100" /> 
+                        <input type="text" placeholder="" name="name" id="name" class="form-control w-100" required="" /> 
                     </div>
                   </div>
                   <div class="col-lg-6 col-md-6 col-12" >
                     <div class="inn-con_div_frm_inp mb-md-3 mb-3" >
                         <label for="email" >E-mail <span>*</span></label>
-                        <input type="email" placeholder="" id="email" class="form-control w-100" /> 
+                        <input type="email" placeholder="" name="email" id="email" class="form-control w-100"  required=""  /> 
                     </div>
                   </div>
                   <div class="col-lg-6 col-md-6 col-12" >
                     <div class="inn-con_div_frm_inp mb-md-3 mb-3" >
                         <label for="mobile" >Mobile No. <span>*</span></label>
-                        <input type="text" placeholder="" id="mobile" class="form-control w-100" /> 
+                        <input type="text" placeholder="" name="mobile" id="mobile" class="form-control w-100"  required="" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" maxlength="10"  /> 
                     </div>
                   </div>
                   <div class="col-lg-6 col-md-6 col-12" >
                     <div class="inn-con_div_frm_inp mb-md-3 mb-3" >
                         <label for="name" >Purpose <span>*</span></label>
-                        <input type="text" placeholder="" class="form-control w-100" /> 
+                        <input type="text" placeholder="" name="purpose" class="form-control w-100" /> 
                     </div>
                   </div>
                   <div class="col-lg-12 col-md-12 col-12" >
                     <div class="inn-con_div_frm_inp mb-md-3 mb-3" >
                         <label for="message" >Your Message <span>*</span></label>
-                        <textarea  class="form-control w-100" ></textarea> 
+                        <textarea  class="form-control w-100" name="message" id="message" ></textarea> 
                     </div>
                   </div>
                   <div class="col-lg-12 col-md-12 col-12 mt-md-3 mt-3" >
-                      <input type="button" role="button" class="cre-btn bg_primary text-white btn" value="Submit" />
+                      <input type="submit" role="button" class="cre-btn bg_primary text-white btn" value="Submit" />
                   </div>
               </form>
             </div>
@@ -551,5 +551,23 @@ Gurugram, Haryana- 122018</span>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
 
     <script type="text/javascript" src="assets/js/credible.js" ></script>
+    
+    <script>
+    function showLoading() {
+        // Display loading GIF or other indicator here
+        // You can show a spinner or a loading text
+        // For simplicity, let's assume you have an element with ID "loading" for showing loading indicator
+        document.getElementById('loading').style.display = 'block';
+        return true; // Allows the form to submit
+    }
+</script>
+
+<!-- Loading GIF -->
+<div id="loading" style="display: none; text-align: center;">
+    <img src="loading.gif" alt="Loading..." width="50" height="50">
+    <p>Sending message...</p>
+</div>
+    
   </body>
 </html>
+
