@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Hybrid Email Calculator | Credible Solutions
-      Pvt. Ltd.
-    </title>
+    <title>Hybrid Email Calculator | Code Superb Pvt. Ltd.</title>
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -36,7 +34,6 @@
       type="text/css"
       href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"
     />
-    
   </head>
 
   <body>
@@ -44,7 +41,13 @@
     <nav class="navbar navbar-expand-lg py-lg-3">
       <div class="container">
         <a class="navbar-brand my-0 py-0" href="index.html" role="button">
-          <span class="">Credible.</span>
+          <span class="">
+            <img
+              src="assets/img/csLogo.svg"
+              class="img-fluid w-100"
+              alt="Code Superb"
+            />
+          </span>
         </a>
         <button
           class="navbar-toggler border-0 p-0"
@@ -94,7 +97,10 @@
             class="navbar-nav log-div position-relative ms-lg-5 align-items-center mb-2 mb-lg-0 list-unstyled"
           >
             <li>
-              <a href="#" class="cre-btn_outline btn text-decoration-none"
+              <a
+                href="javascript:void(0)"
+                class="cre-btn_outline border-0 btn text-decoration-none"
+                target="_blank"
                 >Login</a
               >
             </li>
@@ -112,74 +118,127 @@
     <section class="inn-div position-relative py-60">
       <div class="container">
         <div class="row">
-                      <!-- calculator start -->
-                <div class="col-lg-6 col-md-7 col-sm-12 col-12">
-                    <!-- who start -->
-                    <div class="cal-div-box">
-                        <div class="cal-div-box-cal">
-                            <div class="cal-title">
-                                <h2>Calculate Your Savings</h2>
-                            </div>
-                            <div class="cal-div-box">
-                                <div class="cal-div-box-inp mb-3">
-                                    <label for="email">
-                                        Your total google mail usage?
-                                    </label>
-                                    <div class="cal-div-box-inp-1 d-flex position-relative">
-                                        <input type="text" class="form-control me-2" placeholder="No. of Account" id="acc-count" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');">
-                                        <input type="text" class="form-control" placeholder="₹" id="acc-price-count" disabled="">
-                                    </div>
-                                </div>
-                                <div class="cal-div-box-inp mb-3">
-                                    <label for="email">
-                                        Number of e-mails you want to keep on Google?
-                                    </label>
-                                    <div class="cal-div-box-inp-1 d-flex  position-relative">
-                                        <input type="text" class="form-control  me-2" placeholder="No. of Account" id="gmail-count" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');">
-                                        <input type="text" class="form-control" placeholder="₹" id="gmail-price-count" disabled="">
-                                    </div>
-                                </div>
-                                <div class="cal-div-box-inp mb-3">
-                                    <label for="email">
-                                        Shift rest of the emails to zoho or Cpanel
-                                    </label>
-                                    <div class="cal-div-box-inp-1 d-flex position-relative">
-                                        <select type="text" class="form-control  me-2" id="zoho-count">
-                                            <option class="" value="zoho">Zoho</option>
-                                            <option class="" value="cpanel">cPanel</option>
-                                        </select>
-                                        <input type="text" class="form-control  me-2" placeholder="No. of Account" id="zoho1-count" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');">
-                                        <input type="text" class="form-control" placeholder="₹" id="zoho-price-count" disabled="">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="buy-now d-flex align-items-center mt-5 mt-md-3">
-                            <a href="https://www.aspireindia.com/Unlock-Massive-Savings-with-a-Hybrid-Email-Solution.html" role="link" class="text-decoration-none me-md-3 me-2">Read More</a>
-                            <a class="text-decoration-none" href="tel:9810192551" style="background-color: #1500fe;" role="link">Call Us</a>
-                        </div>
-                    </div>
-                    <!-- who end -->
+          <!-- calculator start -->
+          <div class="col-lg-6 col-md-7 col-sm-12 col-12">
+            <!-- who start -->
+            <div class="cal-div-box">
+              <div class="cal-div-box-cal">
+                <div class="cal-title">
+                  <h2>Calculate Your Savings</h2>
                 </div>
-                <div class="col-lg-6 col-md-5 col-sm-12 col-12">
-                    <!-- who start -->
-                    <div class="calculator-img position-relative ">
-                        <div class="total-saving-cal">
-                            <div>
-                                <p>Total Saving</p>
-                                <span id="total-saving-cal">0</span>
-                            </div>
-                        </div>
+                <div class="cal-div-box">
+                  <div class="cal-div-box-inp mb-3">
+                    <label for="email"> Your total google mail usage? </label>
+                    <div class="cal-div-box-inp-1 d-flex position-relative">
+                      <input
+                        type="text"
+                        class="form-control me-2"
+                        placeholder="No. of Account"
+                        id="acc-count"
+                        oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');"
+                      />
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="₹"
+                        id="acc-price-count"
+                        disabled=""
+                      />
+                    </div>
+                  </div>
+                  <div class="cal-div-box-inp mb-3">
+                    <label for="email">
+                      Number of e-mails you want to keep on Google?
+                    </label>
+                    <div class="cal-div-box-inp-1 d-flex position-relative">
+                      <input
+                        type="text"
+                        class="form-control me-2"
+                        placeholder="No. of Account"
+                        id="gmail-count"
+                        oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');"
+                      />
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="₹"
+                        id="gmail-price-count"
+                        disabled=""
+                      />
+                    </div>
+                  </div>
+                  <div class="cal-div-box-inp mb-3">
+                    <label for="email">
+                      Shift rest of the emails to zoho or Cpanel
+                    </label>
+                    <div class="cal-div-box-inp-1 d-flex position-relative">
+                      <select
+                        type="text"
+                        class="form-control me-2"
+                        id="zoho-count"
+                      >
+                        <option class="" value="zoho">Zoho</option>
+                        <option class="" value="cpanel">cPanel</option>
+                      </select>
+                      <input
+                        type="text"
+                        class="form-control me-2"
+                        placeholder="No. of Account"
+                        id="zoho1-count"
+                        oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');"
+                      />
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="₹"
+                        id="zoho-price-count"
+                        disabled=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="buy-now d-flex align-items-center mt-5 mt-md-3">
+                <a
+                  href="https://www.aspireindia.com/Unlock-Massive-Savings-with-a-Hybrid-Email-Solution.html"
+                  role="link"
+                  class="text-decoration-none me-md-3 me-2"
+                  >Read More</a
+                >
+                <a
+                  class="text-decoration-none"
+                  href="tel:9810192551"
+                  style="background-color: #1500fe"
+                  role="link"
+                  >Call Us</a
+                >
+              </div>
+            </div>
+            <!-- who end -->
+          </div>
+          <div class="col-lg-6 col-md-5 col-sm-12 col-12">
+            <!-- who start -->
+            <div class="calculator-img position-relative">
+              <div class="total-saving-cal">
+                <div>
+                  <p>Total Saving</p>
+                  <span id="total-saving-cal">0</span>
+                </div>
+              </div>
 
-                        <div class="calculator-img-div">
-                            <img src="assets/img/calculator.webp" class="img-fluid w-100 d-none d-md-block" alt="">
-                        </div>
-                    </div>
-                    <!-- who end -->
-                </div>
-            <!-- calculator end -->
+              <div class="calculator-img-div">
+                <img
+                  src="assets/img/calculator.webp"
+                  class="img-fluid w-100 d-none d-md-block"
+                  alt=""
+                />
+              </div>
+            </div>
+            <!-- who end -->
+          </div>
+          <!-- calculator end -->
         </div>
-      </div
+      </div>
     </section>
     <!-- about end -->
     <!-- footer start -->
@@ -333,31 +392,26 @@
                 </li>
                 <li>
                   <a
-                    href="javascript:void(0)"
+                    href="https://www.javascript.com/"
+                    target="_blank"
                     class="text-decoration-none"
                     role="button"
-                    >Back-end</a
+                    >Javascript</a
                   >
                 </li>
                 <li>
                   <a
-                    href="javascript:void(0)"
+                    href="https://nodejs.org/en"
+                    target="_blank"
                     class="text-decoration-none"
                     role="button"
-                    >Front-end</a
+                    >Node.js</a
                   >
                 </li>
                 <li>
                   <a
-                    href="javascript:void(0)"
-                    class="text-decoration-none"
-                    role="button"
-                    >PHP</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="javascript:void(0)"
+                    href="https://angular.io/"
+                    target="_blank"
                     class="text-decoration-none"
                     role="button"
                     >Angular</a
@@ -365,18 +419,29 @@
                 </li>
                 <li>
                   <a
-                    href="javascript:void(0)"
+                    href="https://react.dev/"
+                    target="_blank"
                     class="text-decoration-none"
                     role="button"
-                    >Figma</a
+                    >React</a
                   >
                 </li>
                 <li>
                   <a
-                    href="javascript:void(0)"
+                    href="https://www.php.net/"
+                    target="_blank"
                     class="text-decoration-none"
                     role="button"
-                    >React</a
+                    >PHP</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://figma.com/"
+                    target="_blank"
+                    class="text-decoration-none"
+                    role="button"
+                    >Figma</a
                   >
                 </li>
               </ul>
@@ -408,7 +473,7 @@
                 <li>
                   <a
                     href="javascript:void(0)"
-                    class="text-decoration-none"
+                    class="text-decoration-none d-none"
                     role="button"
                     >Testimonials</a
                   >
@@ -624,7 +689,7 @@
                   <ul class="list-unstyled">
                     <li>
                       <a
-                        href="https://wordpress.com"
+                        href="https://wordpress.com/"
                         target="_blank"
                         class="text-decoration-none"
                         role="button"
@@ -642,31 +707,26 @@
                     </li>
                     <li>
                       <a
-                        href="javascript:void(0)"
+                        href="https://www.javascript.com/"
+                        target="_blank"
                         class="text-decoration-none"
                         role="button"
-                        >Back-end</a
+                        >Javascript</a
                       >
                     </li>
                     <li>
                       <a
-                        href="javascript:void(0)"
+                        href="https://nodejs.org/en"
+                        target="_blank"
                         class="text-decoration-none"
                         role="button"
-                        >Front-end</a
+                        >Node.js</a
                       >
                     </li>
                     <li>
                       <a
-                        href="javascript:void(0)"
-                        class="text-decoration-none"
-                        role="button"
-                        >PHP</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        href="javascript:void(0)"
+                        href="https://angular.io/"
+                        target="_blank"
                         class="text-decoration-none"
                         role="button"
                         >Angular</a
@@ -674,18 +734,29 @@
                     </li>
                     <li>
                       <a
-                        href="javascript:void(0)"
+                        href="https://react.dev/"
+                        target="_blank"
                         class="text-decoration-none"
                         role="button"
-                        >Figma</a
+                        >React</a
                       >
                     </li>
                     <li>
                       <a
-                        href="javascript:void(0)"
+                        href="https://www.php.net/"
+                        target="_blank"
                         class="text-decoration-none"
                         role="button"
-                        >React</a
+                        >PHP</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://figma.com/"
+                        target="_blank"
+                        class="text-decoration-none"
+                        role="button"
+                        >Figma</a
                       >
                     </li>
                   </ul>
@@ -732,7 +803,7 @@
                     <li>
                       <a
                         href="javascript:void(0)"
-                        class="text-decoration-none"
+                        class="text-decoration-none d-none"
                         role="button"
                         >Testimonials</a
                       >
@@ -780,7 +851,14 @@
               </div>
               <div class="foo-div_cnt_lst_nme ms-2">
                 <p class="d-none">Phone</p>
-                <span>+91(995) 875-5444</span>
+                <span
+                  ><a
+                    href="tel:9958755444"
+                    class="text-decoration-none"
+                    role="button"
+                    >+91(995) 875-5444</a
+                  ></span
+                >
               </div>
             </div>
           </div>
@@ -793,7 +871,14 @@
               </div>
               <div class="foo-div_cnt_lst_nme ms-2">
                 <p class="d-none">eMail</p>
-                <span>info@crediblesolutions.com</span>
+                <span
+                  ><a
+                    href="mailto:info@codesuperb.com"
+                    class="text-decoration-none"
+                    role="button"
+                    >info@codesuperb.com</a
+                  ></span
+                >
               </div>
             </div>
           </div>
@@ -806,10 +891,7 @@
               </div>
               <div class="foo-div_cnt_lst_nme ms-2">
                 <p class="d-none">Office Address</p>
-                <span
-                  >419-424, 4th Floor, JMD Megapolis, Sohna Rd Hwy, Sector 48,
-                  Gurugram, Haryana- 122018</span
-                >
+                <span>G24 Quest Cowork 15th Floor Ocus Quantum Sector-51, Gurgaon</span>
               </div>
             </div>
           </div>
@@ -818,19 +900,19 @@
           <div class="col-xl-6 col-lg-6">
             <div class="foo-div_cpy_lnk">
               <p class="mb-md-0 mb-2">
-                Copyright &copy; 2024 &nbsp;- &nbsp;CREDIBLE
-                SOLUTION.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
-                  href="javascript:void(0)"
+                Copyright &copy; 2024 &nbsp;- &nbsp;CODE
+                SUPERB.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
+                  href="privacy-policy.html"
                   class="text-decoration-underline text-white pe-2"
                   role="button"
                   >Privacy Policy</a
                 >
                 |
                 <a
-                  href="javascript:void(0)"
+                  href="responsible-discloure-policy.html"
                   class="text-decoration-underline ps-2 text-white"
                   role="button"
-                  >Term & Condition</a
+                  >Responsible Disclosure Policy</a
                 >
               </p>
             </div>
@@ -900,73 +982,69 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"
       integrity="sha512-GWzVrcGlo0TxTRvz9ttioyYJ+Wwk9Ck0G81D+eO63BaqHaJ3YZX9wuqjwgfcV/MrB2PhaVX9DkYVhbFpStnqpQ=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
       integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-
     <script
       type="text/javascript"
       src="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"
     ></script>
     <script type="text/javascript" src="assets/js/credible.js"></script>
-    
+
     <script type="text/javascript">
-        $(document).ready(function () {
-            var google, restValue;
+      $(document).ready(function () {
+        var google, restValue;
 
-            var gmail = 0;
-            var zoho = 0;
+        var gmail = 0;
+        var zoho = 0;
 
-            $('#acc-count').keyup(function (e) {
-                let amt = $(this).val() * 220;
-                $('#acc-price-count').val(amt);
-                google = parseInt($('#acc-price-count').val());
-            });
-            $('#gmail-count').keyup(function (e) {
-                let amt1 = $(this).val() * 220;
-                $('#gmail-price-count').val(amt1);
-                gmail = parseInt($('#gmail-price-count').val());
-                restValue = parseInt($('#acc-count').val() - $('#gmail-count').val());
-                $("#zoho1-count").val(restValue);
-            });
-
-            $('#zoho1-count').keyup(function () {
-                var the_total = $("#zoho1-count").val();
-                var get_package = $("#zoho-count").val();
-                if (get_package == 'zoho') {
-                    var total = the_total * 59;
-                } else {
-                    var total = the_total * 29;
-                }
-                $("#zoho-price-count").val(total);
-                zoho = parseInt($("#zoho-price-count").val());
-            });
-
-            $('#zoho-count').change(function () {
-                $('#zoho1-count').keyup();
-            });
-
-            $('#gmail-count, #acc-count, #zoho1-count').keyup(function (e) {
-                let total1 = parseInt(google - (gmail + zoho));
-                console.log(parseInt(total1));
-                $("#total-saving-cal").text(total1);
-            });
-            $('#gmail-count, #acc-count, #zoho1-count').change(function () {
-                $('#gmail-count, #acc-count, #zoho1-count').keyup();
-            });
-
+        $("#acc-count").keyup(function (e) {
+          let amt = $(this).val() * 220;
+          $("#acc-price-count").val(amt);
+          google = parseInt($("#acc-price-count").val());
         });
+        $("#gmail-count").keyup(function (e) {
+          let amt1 = $(this).val() * 220;
+          $("#gmail-price-count").val(amt1);
+          gmail = parseInt($("#gmail-price-count").val());
+          restValue = parseInt($("#acc-count").val() - $("#gmail-count").val());
+          $("#zoho1-count").val(restValue);
+        });
+
+        $("#zoho1-count").keyup(function () {
+          var the_total = $("#zoho1-count").val();
+          var get_package = $("#zoho-count").val();
+          if (get_package == "zoho") {
+            var total = the_total * 59;
+          } else {
+            var total = the_total * 29;
+          }
+          $("#zoho-price-count").val(total);
+          zoho = parseInt($("#zoho-price-count").val());
+        });
+
+        $("#zoho-count").change(function () {
+          $("#zoho1-count").keyup();
+        });
+
+        $("#gmail-count, #acc-count, #zoho1-count").keyup(function (e) {
+          let total1 = parseInt(google - (gmail + zoho));
+          console.log(parseInt(total1));
+          $("#total-saving-cal").text(total1);
+        });
+        $("#gmail-count, #acc-count, #zoho1-count").change(function () {
+          $("#gmail-count, #acc-count, #zoho1-count").keyup();
+        });
+      });
     </script>
   </body>
 </html>

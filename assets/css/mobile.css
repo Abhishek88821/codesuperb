@@ -343,4 +343,9 @@ section.inn-div::before {
     height: 200px;
 }
 
+a.navbar-brand > span {
+  height: 45PX;
+  width: 105px;
+}
+
 }
