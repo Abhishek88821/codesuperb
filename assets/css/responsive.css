@@ -13,12 +13,12 @@
     --ls4: -0.9px;
     --pb200: 100px;
   }
-  
+
   .srv-sec_servie_name_container h4,
   .discussTheProject-sec_heading_container > h5 {
     letter-spacing: -2.5px;
   }
-  
+
   .hr-sec_heading_container_play {
     width: 70px;
     height: 70px;
@@ -91,14 +91,14 @@
 @media only screen and (max-width: 568px) {
   :root {
     --fs14: 14px;
-    --fs16: 16px;
+    --fs16: 15px;
     --fs20: 15px;
     --fs25: 16px;
     --fs32: 18px;
     --fs50: 30px;
     --fs65: 40px;
     --fs90: 45px;
-    --ls5: -3px;
+    --ls5: -2.5px;
     --ls4: -1px;
     --pb200: 70px;
   }
@@ -109,7 +109,7 @@
     overflow-x: hidden;
   }
   .srv-sec_servie_name_container h4 {
-    letter-spacing: -2.5px;
+    letter-spacing: -2px;
   }
   .hr-sec_heading_container_second span,
   .hr-sec_heading_container h1 {
@@ -187,6 +187,11 @@
     margin-top: 20px;
   }
 
+  .hr-sec_link_project_container > span:first-child {
+    font-size: 28px;
+    font-weight: 500;
+  }
+
   .fnd-sec_project_title_container,
   .blg-sec_project_title_container {
     padding: 30px 20px 30px;
@@ -200,5 +205,18 @@
   }
   .hd-sec_logo_container {
     width: 75px;
+  }
+  .foo-sec_list_container > ul {
+    margin: 25px 0;
+  }
+
+  .foo-sec_list_container > ul > li > a {
+    text-decoration: underline !important;
+    padding: 0;
+    border: none;
+    margin: 5px 0 0;
+  }
+  .sld-sec_image_container {
+    height: 200px;
   }
 }
