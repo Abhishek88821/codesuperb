@@ -14,7 +14,7 @@ $('.discussTheProject-sec_method_container > ul > li').click(function() {
 
 //gsap text split
 const isMobile = window.innerWidth <= 768;
-const animationDuration = isMobile ? 0.5 : 0.2;
+const animationDuration = isMobile ? 1 : 0.2;
 
 gsap.registerPlugin(ScrollTrigger);
 const hr_H1 = new SplitType(".hr-sec_heading_container h1");
