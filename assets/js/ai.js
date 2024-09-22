@@ -13,6 +13,9 @@ $('.discussTheProject-sec_method_container > ul > li').click(function() {
 })
 
 //gsap text split
+const isMobile = window.innerWidth <= 768;
+const animationDuration = isMobile ? 0.5 : 0.2;
+
 gsap.registerPlugin(ScrollTrigger);
 const hr_H1 = new SplitType(".hr-sec_heading_container h1");
 const hr_H2 = new SplitType(".hr-sec_heading_container h2");
@@ -26,7 +29,7 @@ tl.to(".char", {
   opacity: 1,
   y: 0,
   stagger: 0.1,
-  duration: 0.2,
+  duration: animationDuration,
 });
 tl.from(
   ".hr-sec_heading_container_second span",
