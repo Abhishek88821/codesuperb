@@ -219,7 +219,13 @@
   .sld-sec_image_container {
     height: 200px;
   }
-    .char { 
-    transition: transform 0.6s;
+  .legacyVideo-sec .modal-dialog {
+    width: 95%;
+  }
+  .legacyVideo-sec_video_container {
+    height: 300px;
+  }
+  .char { 
+    transition: transform 0.7s;
   }
 }
