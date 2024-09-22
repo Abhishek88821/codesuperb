@@ -219,4 +219,7 @@
   .sld-sec_image_container {
     height: 200px;
   }
+    .char { 
+    transition: transform 0.6s;
+  }
 }
