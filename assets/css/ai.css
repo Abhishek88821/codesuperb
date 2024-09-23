@@ -74,6 +74,7 @@ body {
 .discussTheProject-sec .btn-close,
 .discussTheProject-sec_form_container label,
 .hd-sec_navbar_container ul li > a,
+.hd-sec_hanburger_mobile_navbar_container ul > li > a,
 .hr-sec_link_container ul li > a {
   color: var(--secondaryclr);
 }
@@ -156,6 +157,7 @@ body {
 .discussTheProject-sec_form_container input,
 .discussTheProject-sec_heading_container p,
 .hd-sec_navbar_container ul li > a,
+.hd-sec_hanburger_mobile_navbar_container ul > li > a,
 .hr-sec_link_container ul li > a {
   font-size: var(--fs14);
 }
@@ -195,6 +197,7 @@ body {
 .discussTheProject-sec_method_img span,
 .mai-sec_content_container span .fnd-sec_paragraph_container p,
 .hd-sec_navbar_container ul li > a,
+.hd-sec_hanburger_mobile_navbar_container ul > li > a,
 .hr-sec_link_container ul li > a {
   font-weight: 400;
 }
@@ -241,6 +244,7 @@ body {
 .hd-sec_action_container,
 .discussTheProject-sec_method_img span,
 .hd-sec_navbar_container ul li > a,
+.hd-sec_hanburger_mobile_navbar_container ul > li > a,
 .hr-sec_link_container ul li > a {
   letter-spacing: var(--ls4);
 }
@@ -292,7 +296,8 @@ body {
   background-color: var(--secondaryclr);
   transition: var(--transition);
 }
-.hd-sec_navbar_container > ul > li {
+.hd-sec_navbar_container > ul > li,
+.hd-sec_hanburger_mobile_navbar_container ul > li {
   position: relative;
 }
 
@@ -391,6 +396,7 @@ body {
 .fnd-sec .hd-sec_arrow_container,
 .hr-sec_heading_container_play > img,
 .hd-sec_social_container > ul > li > a,
+.hd-sec_hanburger_mobile_navbar_container ul > li > a,
 .srv-sec_service .srv-sec_servie_name_container,
 .srv-sec_service .srv-sec_servie_name_container > h4,
 .discussTheProject-sec .btn-close,
@@ -430,8 +436,16 @@ body {
 
 /* default end */
 /* unique start */
+.hd-sec_hanburger_mobile_navbar {
+  position: fixed;
+  top: 0;
+  background: #fff;
+  width: 100%;
+  left: 0;
+  height: 100vh;
+  z-index: 99999999;
+}
 .modal.fade .modal-dialog {
-  /* transform: none!important; */
   transition: 0.3s all ease-in !important;
 }
 
@@ -579,7 +593,7 @@ body::-webkit-scrollbar-thumb {
   padding-left: 40px;
   padding-right: 40px;
 } */
-.hd-sec_logo_container {
+.hd-sec_logo_container, .hd-sec_hanburger_mobile_navbar_header_logo_container {
   width: 75px;
 }
 .hd-sec_arrow_container {
@@ -694,6 +708,10 @@ body::-webkit-scrollbar-thumb {
   padding: 30px;
   width: 580px;
   max-width: 100%;
+}
+
+.hd-sec {
+  z-index: 999;
 }
 
 /* unique end */
