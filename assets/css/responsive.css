@@ -451,5 +451,6 @@
   }
   .discussTheProject-sec .btn-close, .legacyVideo-sec .btn-close {
     bottom: 20px;
+    top: auto;
   }
 }
