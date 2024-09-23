@@ -111,7 +111,7 @@ let t2 = gsap.timeline({
                     pin: true
   }
 });
-t2.from(".ct-sec_logo", {
+t2.to(".ct-sec_logo", {
   transform: "translateX(-200%)",
   // opacity: 0,
   // duration: 1,
