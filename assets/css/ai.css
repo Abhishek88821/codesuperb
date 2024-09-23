@@ -28,6 +28,10 @@ body {
   margin: 0;
   box-sizing: border-box;
   font-family: var(--font);
+  overflow-x: hidden !important;
+  overflow-y: scroll;
+  /* -webkit-overflow-scrolling: touch; */
+  /* overflow-scrolling: touch; */
 }
 
 .hr-sec_heading_container_play,
@@ -67,7 +71,7 @@ body {
 .foo-sec_list_container > ul > li > a,
 .fnd-sec_paragraph_container p,
 .discussTheProject-sec_heading_container p,
-.discussTheProject-sec  .btn-close,
+.discussTheProject-sec .btn-close,
 .discussTheProject-sec_form_container label,
 .hd-sec_navbar_container ul li > a,
 .hr-sec_link_container ul li > a {
@@ -386,7 +390,10 @@ body {
 .hr-sec_link_container > ul > li > a,
 .fnd-sec .hd-sec_arrow_container,
 .hr-sec_heading_container_play > img,
-.discussTheProject-sec  .btn-close,
+.hd-sec_social_container > ul > li > a,
+.srv-sec_service .srv-sec_servie_name_container,
+.srv-sec_service .srv-sec_servie_name_container > h4,
+.discussTheProject-sec .btn-close,
 .discussTheProject-sec_button_container,
 .discussTheProject-sec_button_container .hd-sec_arrow_container {
   transition: var(--transition);
@@ -406,24 +413,41 @@ body {
   height: 60px;
 }
 
-.discussTheProject-sec  .btn-close,
-.legacyVideo-sec  .btn-close
- {
+.discussTheProject-sec .btn-close,
+.legacyVideo-sec .btn-close {
   position: fixed;
   right: 20px;
   top: 20px;
   opacity: 1;
   background-image: url(../img/icons/close.svg);
   background-size: 30px;
-  }
-  .discussTheProject-sec,
-  .legacyVideo-sec {
-    background-color: #ffffff75;
-    backdrop-filter: blur(6px);
-  }
-  
+}
+.discussTheProject-sec,
+.legacyVideo-sec {
+  background-color: #ffffff75;
+  backdrop-filter: blur(6px);
+}
+
 /* default end */
 /* unique start */
+.modal.fade .modal-dialog {
+  /* transform: none!important; */
+  transition: 0.3s all ease-in !important;
+}
+
+.fade {
+  transition: opacity 0.3s linear !important;
+}
+
+.modal .modal-dialog {
+  opacity: 0;
+  transform: scale(0.9) !important;
+}
+.modal.show .modal-dialog {
+  opacity: 1 !important;
+  transform: scale(1) !important;
+}
+
 .legacyVideo-sec .modal-dialog {
   width: 700px;
   max-width: 100%;
@@ -439,8 +463,8 @@ body {
   width: var(--fs14);
 }
 .discussTheProject-sec_method_container > ul > li {
-    flex: 1;
-    padding: 3px 0;
+  flex: 1;
+  padding: 3px 0;
 }
 .discussTheProject-sec_form_container input {
   border-radius: 12px;
@@ -681,8 +705,14 @@ body::-webkit-scrollbar-thumb {
   background-color: var(--lightclr) !important;
   border: none !important;
 }
-.discussTheProject-sec  .btn-close:hover {
-  opacity: .5;
+
+.srv-sec_service:hover h4 {
+  text-decoration: underline;
+}
+
+.discussTheProject-sec .btn-close:hover,
+.hd-sec_social_container > ul > li > a:hover {
+  opacity: 0.5;
 }
 .discussTheProject-sec_button_container:hover {
   transform: scale(1.05);
@@ -754,9 +784,28 @@ body::-webkit-scrollbar-thumb {
   clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
 }
 
+.ct-sec_logo {
+  transform: translateX(0%);
+}
+.foo-sec,
 .sec_heading_container h2,
+.ct-sec_logo,
+.btn-ani_wave,
 .sec_heading_container h3 {
   clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+}
+.ct-sec_logo {
+  height: 120px;
+}
+.hd-sec {
+  transform: translateY(-80px);
+}
+.foo-sec {
+  transform: translateY(80px);
+}
+.ct-sec_logo-container {
+  position: static !important;
+  transform: none !important;
 }
 
 .ct-sec_logo {
@@ -778,6 +827,14 @@ body::-webkit-scrollbar-thumb {
 .hr-sec_heading_container_second > h2 {
   white-space: nowrap;
 }
+
+/* .fnd-sec_project,
+.blg-sec_project,
+.blog-class {
+  opacity: 0;
+  transform: translateY(80px);
+} */
+
 .char {
   transform: translateY(115px);
   transition: transform 0.45s;

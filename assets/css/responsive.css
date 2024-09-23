@@ -29,12 +29,12 @@
   :root {
     --fs14: 14px;
     --fs16: 16px;
-    --fs20: 18px;
+    --fs20: 17px;
     --fs25: 22px;
     --fs32: 24px;
     --fs50: 40px;
     --fs65: 55px;
-    --fs90: 60px;
+    --fs90: 52px;
     --ls5: -4px;
     --ls4: -1px;
     --pb200: 100px;
@@ -64,8 +64,8 @@
     height: 450px;
   }
   .hr-sec_heading_container_play {
-    width: 60px;
-    height: 60px;
+    width: 45px;
+    height: 45px;
   }
   .hr-sec_cloud-container {
     width: 40px;
@@ -76,6 +76,9 @@
   }
   .hd-sec_hanburger_container {
     width: 35px;
+  }
+  .hr-sec_heading_container_play > img {
+    width: 10px;
   }
   .container {
     max-width: 90%;
@@ -226,6 +229,6 @@
     height: 300px;
   }
   .char { 
-    transition: transform 0.75s;
+    transition: transform 0.7s;
   }
 }
