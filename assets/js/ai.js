@@ -103,13 +103,16 @@ tl.from(
 let t2 = gsap.timeline({
   scrollTrigger: {
     trigger: ".ct-sec",
-    start: "top center",
-    end: "bottom bottom",
-    scrub: true,
-    markers: false,
+   scroller: "body",
+                    markers: false,
+                    start: "top 0%",
+                    end: "top -100%",
+                    scrub: 2,
+                    pin: true
   }
 });
 t2.from(".ct-sec_logo", {
+  transform: "translateX(-200%)",
   // opacity: 0,
   // duration: 1,
   // ease: "circ.out"
