@@ -34,7 +34,7 @@
     width: 24px;
     filter: brightness(0) grayscale(0) brightness(10) contrast(9);
     margin-top: -14px;
-}
+  }
   .hd-sec_hanburger_mobile_navbar_container ul > li > a {
     font-size: 15px;
   }
@@ -64,7 +64,7 @@
     box-shadow: 0 0 35px #1a1a1a3b;
     border-radius: 0;
     overflow: hidden;
-}
+  }
 }
 
 /* from 768px to 991px */
@@ -278,6 +278,21 @@
   .char {
     transition: transform 0.7s;
   }
+  .discussTheProject-sec_heading_container > h5 {
+    letter-spacing: -1.5px;
+  }
+  .discussTheProject-sec_method_container > ul {
+    flex-wrap: wrap;
+  }
+  .discussTheProject-sec_method_container > ul > li {
+    flex: 2;
+  }
+  .discussTheProject-sec .modal-content {
+    padding: 15px;
+  }
+  .discussTheProject-sec .btn-close, .legacyVideo-sec .btn-close {
+    bottom: 20px;
+  }
 }
 /* <568px */
 @media only screen and (max-width: 568px) {
@@ -420,5 +435,20 @@
   }
   .char {
     transition: transform 0.7s;
+  }
+  .discussTheProject-sec_heading_container > h5 {
+    letter-spacing: -1.5px;
+  }
+  .discussTheProject-sec_method_container > ul {
+    flex-wrap: wrap;
+  }
+  .discussTheProject-sec_method_container > ul > li {
+    flex: 2;
+  }
+  .discussTheProject-sec .modal-content {
+    padding: 15px;
+  }
+  .discussTheProject-sec .btn-close, .legacyVideo-sec .btn-close {
+    bottom: 20px;
   }
 }
