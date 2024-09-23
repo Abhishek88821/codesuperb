@@ -31,10 +31,10 @@
     grid-gap: 10px;
   }
   .hd-sec_hanburger_mobile_navbar_header_close_container {
-    width: 20px;
+    width: 24px;
     filter: brightness(0) grayscale(0) brightness(10) contrast(9);
-    margin-top: -8px;
-  }
+    margin-top: -14px;
+}
   .hd-sec_hanburger_mobile_navbar_container ul > li > a {
     font-size: 15px;
   }
@@ -52,8 +52,19 @@
   }
   .hd-sec_hanburger_mobile_navbar {
     opacity: 0;
-    /* transform: translateY(-50px); */
   }
+  .hd-sec_hanburger_mobile_navbar {
+    position: fixed;
+    top: 0;
+    background: var(--lightclr);
+    width: 100%;
+    left: 0;
+    height: 100vh;
+    z-index: 99999999;
+    box-shadow: 0 0 35px #1a1a1a3b;
+    border-radius: 0;
+    overflow: hidden;
+}
 }
 
 /* from 768px to 991px */
