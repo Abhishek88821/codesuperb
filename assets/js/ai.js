@@ -244,66 +244,83 @@ buttons.forEach((button) => {
   button.addEventListener("mouseleave", () => gsap.set(chars, { y: 0 }));
 });
 
-
 //menu
 const menuIcon = document.querySelector(".hd-sec_hanburger_container");
 const menuContent = document.querySelector(".hd-sec_hanburger_mobile_navbar");
 
-gsap.set(menuContent.querySelectorAll('.hd-sec_hanburger_mobile_navbar_header, .hd-sec_hanburger_mobile_navbar_container ul li, .hd-sec_social_container li, .hd-sec_language, .hd-sec_action_container'), { opacity: 0 });
+gsap.set(
+  menuContent.querySelectorAll(
+    ".hd-sec_hanburger_mobile_navbar_header, .hd-sec_hanburger_mobile_navbar_container ul li, .hd-sec_social_container li, .hd-sec_language, .hd-sec_action_container"
+  ),
+  { opacity: 0 }
+);
 menuIcon.addEventListener("click", () => {
   if (menuContent.style.display === "block") {
     gsap.to(menuContent, {
       height: 0,
       opacity: 0,
-      duration: 0.5,
+      duration: 1,
       onComplete: () => {
         menuContent.style.display = "none";
-      }
+      },
     });
   } else {
-    menuContent.style.display = "block"; 
-    gsap.fromTo(menuContent, {
-      height: 0,
-      opacity: 0,
-    }, {
-      height: "auto",
-      opacity: 1,
-      duration: 0.5,
-      onComplete: () => {
-        gsap.fromTo(menuContent.querySelectorAll('.hd-sec_hanburger_mobile_navbar_header, .hd-sec_hanburger_mobile_navbar_container ul li, .hd-sec_social_container li, .hd-sec_language, .hd-sec_action_container'), {
-          opacity: 0,
-          y: 20,
-        }, {
-          opacity: 1,
-          y: 0,
-          duration: 0.5,
-          stagger: 0.1,
-        });
+    menuContent.style.display = "block";
+    gsap.fromTo(
+      menuContent,
+      {
+        height: 0,
+        opacity: 0,
+      },
+      {
+        height: "auto",
+        opacity: 1,
+        duration: 1,
+        onComplete: () => {
+          gsap.fromTo(
+            menuContent.querySelectorAll(
+              ".hd-sec_hanburger_mobile_navbar_header, .hd-sec_hanburger_mobile_navbar_container ul li, .hd-sec_social_container li, .hd-sec_language,.hd-sec_action_container"
+            ),
+            {
+              opacity: 0,
+              y: 20,
+            },
+            {
+              opacity: 1,
+              y: 0,
+              duration: 1,
+              stagger: 0.08,
+            }
+          );
+        },
       }
-    });
+    );
   }
 });
 
-const closeButton = menuContent.querySelector(".hd-sec_hanburger_mobile_navbar_header_close_container");
-
+const closeButton = menuContent.querySelector(
+  ".hd-sec_hanburger_mobile_navbar_header_close_container"
+);
 closeButton.addEventListener("click", () => {
-  // First, fade out the inner content
-  gsap.to(menuContent.querySelectorAll('.hd-sec_hanburger_mobile_navbar_header, .hd-sec_hanburger_mobile_navbar_container ul li, .hd-sec_social_container li, .hd-sec_language, .hd-sec_action_container'), {
-    opacity: 0, // Fade out inner content
-    y: 20, // Slide down
-    duration: 0.3,
-    stagger: 0.1,
-    onComplete: () => {
-      // After inner content fades out, animate menuContent
-      gsap.to(menuContent, {
-        height: 0,
-        opacity: 0,
-        duration: 0.5,
-        onComplete: () => {
-          menuContent.style.display = "none"; // Hide after animation
-        }
-      });
+  gsap.to(
+    menuContent.querySelectorAll(
+      ".hd-sec_hanburger_mobile_navbar_header, .hd-sec_hanburger_mobile_navbar_container ul li, .hd-sec_social_container li, .hd-sec_language, .hd-sec_action_container"
+    ),
+    {
+      opacity: 0,
+      y: 20,
+      duration: 0.3,
+      stagger: 0.1,
+      onComplete: () => {
+        gsap.to(menuContent, {
+          height: 0,
+          opacity: 0,
+          duration: 0.5,
+          onComplete: () => {
+            menuContent.style.display = "none";
+          },
+        });
+      },
     }
-  });
+  );
 });
-
