@@ -286,6 +286,7 @@
   }
   .discussTheProject-sec_method_container > ul > li {
     flex: 2;
+    padding: 0 20px;
   }
   .discussTheProject-sec .modal-content {
     padding: 15px;
