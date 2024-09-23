@@ -26,7 +26,7 @@
   </head>
   <body>
     <!-- header start -->
-    <header class="hd-sec py-md-2 py-2">
+    <header class="hd-sec position-relative py-md-2 py-2">
       <div class="container">
         <div class="row align-items-center">
           <div
@@ -163,7 +163,7 @@
               </div>
             </div>
             <div class="hd-sec_hanburger d-lg-none d-md-block ms-md-5 ms-4 position-relative">
-              <div class="hd-sec_hanburger_container">
+              <div class="hd-sec_hanburger_container" role="button">
                 <img
                   src="assets/img/icons/hanburger.svg"
                   class="img-fluid w-100"
@@ -171,9 +171,33 @@
                   title="menu"
                 />
               </div>
-              <div class="hd-sec_hanburger_mobil_navbar d-lg-none d-md-none d-none">
-                <div class="hd-sec_hanburger_mobile_navbar_container">
-                  <ul class="list-unstyled mb-0 d-grid">
+              <div class="hd-sec_hanburger_mobile_navbar pb-4" style="display: none;">
+                <div class="container" >
+                  <div class="row">
+                    <div class="col-lg-12 col-md-12 col-12" >
+                <div class="hd-sec_hanburger_mobile_navbar_header py-md-2 py-2 d-flex align-items-center justify-content-between" >
+                
+                    <div class="hd-sec_hanburger_mobile_navbar_header_logo">
+                      <div class="hd-sec_hanburger_mobile_navbar_header_logo_container">
+                        <a href="index.html" role="button" class="text-decoration-none" >
+                        <img
+                          src="assets/img/logo.svg"
+                          class="img-fluid w-100"
+                          alt="Logo"
+                          title="Logo"
+                        />
+                        </a>
+                      </div>
+                    </div>
+                    <div class="hd-sec_hanburger_mobile_navbar_header_close">
+                      <div class="hd-sec_hanburger_mobile_navbar_header_close_container" role="button" >
+                      <img src="assets/img/icons/close.svg" class="img-fluid w-100" alt="close icon" />
+                    </div>
+                  </div>
+
+                </div>
+                <div class="hd-sec_hanburger_mobile_navbar_container pt-4">
+                  <ul class="list-unstyled text-center mb-4 d-grid">
                     <li>
                       <a
                         href="about.html"
@@ -208,6 +232,84 @@
                     </li>
                   </ul>
                 </div>
+
+                <div class="hd-sec_social_container d-grid">
+                  <ul class="list-unstyled my-3 d-lg-none d-flex justify-content-center">
+                    <li>
+                      <a
+                        href="javascript:void(0)"
+                        class="text-decoration-none d-block"
+                        role="button"
+                      >
+                        <img
+                          src="assets/img/icons/linkedin.png"
+                          class="img-fluid w-100"
+                          alt="Linkedin"
+                          title="Linkedin"
+                        />
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="javascript:void(0)"
+                        class="text-decoration-none d-block"
+                        role="button"
+                      >
+                        <img
+                          src="assets/img/icons/x.png"
+                          class="img-fluid w-100"
+                          alt="Twitter"
+                          title="Twitter"
+                        />
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="javascript:void(0)"
+                        class="text-decoration-none d-block"
+                        role="button"
+                      >
+                        <img
+                          src="assets/img/icons/instagram.png"
+                          class="img-fluid w-100"
+                          alt="Instagram"
+                          title="Instagram"
+                        />
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="javascript:void(0)"
+                        class="text-decoration-none d-block"
+                        role="button"
+                      >
+                        <img
+                          src="assets/img/icons/whatsapp.png"
+                          class="img-fluid w-100"
+                          alt="Whatsapp"
+                          title="Whatsapp"
+                        />
+                      </a>
+                    </li>
+                  </ul>
+                  <select
+                    class="hd-sec_language text-uppercase border-0 my-4 mx-auto w-auto border-0 d-xl-block d-lg-none d-block shadow-none"
+                  >
+                    <option class="" value="en">En</option>
+                  </select>
+                </div>
+
+                <div
+                class="hd-sec_action_container d-lg-none d-flex justify-content-center align-items-center"
+                role="button"  data-bs-toggle="modal" data-bs-target="#discussTheProject" data-bs-whatever="@dtp"
+              >
+                <span class="position-relative text-nowrap">discuss the project</span>
+                <div class="hd-sec_arrow_container"></div>
+              </div>
+
+            </div>
+          </div>
+        </div>  
               </div>
             </div>
           </div>
