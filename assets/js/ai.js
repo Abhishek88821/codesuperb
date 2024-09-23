@@ -100,23 +100,23 @@ tl.from(
 // window.addEventListener('scroll', playAnimation);
 
 // =================== t2
-let t2 = gsap.timeline({
-  scrollTrigger: {
-    trigger: ".ct-sec",
-   scroller: "body",
-                    markers: false,
-                    start: "top 0%",
-                    end: "top -100%",
-                    scrub: 2,
-                    pin: true
-  }
-});
-t2.to(".ct-sec_logo", {
-  transform: "translateX(-200%)",
-  // opacity: 0,
-  // duration: 1,
-  // ease: "circ.out"
-});
+// let t2 = gsap.timeline({
+//   scrollTrigger: {
+//     trigger: ".ct-sec",
+//    scroller: "body",
+//                     markers: false,
+//                     start: "top 0%",
+//                     end: "top -100%",
+//                     scrub: 2,
+//                     pin: true
+//   }
+// });
+// t2.to(".ct-sec_logo", {
+//   transform: "translateX(-200%)",
+//   // opacity: 0,
+//   // duration: 1,
+//   // ease: "circ.out"
+// });
 
 // =================== t3
 // let t3 = gsap.timeline({
