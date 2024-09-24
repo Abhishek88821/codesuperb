@@ -23,6 +23,14 @@
     width: 70px;
     height: 70px;
   }
+  .sld-sec_image_container {
+    height: 300px;
+  }
+
+  .hr-sec_video_container {
+    width: 420px;
+    transform: translate(-19%, 10px);
+  }
 }
 
 /* max 991px  */
@@ -65,10 +73,13 @@
     border-radius: 0;
     overflow: hidden;
   }
+  .sld-sec_image_container {
+    height: 300px;
+  }
 }
 
-/* from 768px to 991px */
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+/* from 768px to 992px */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
   :root {
     --fs14: 14px;
     --fs16: 16px;
@@ -128,6 +139,13 @@
   }
   .ct-sec_logo_image > a > img {
     height: 90px;
+  }
+  .sld-sec_image_container {
+    height: 260px;
+  }
+  .hr-sec_video_container {
+    width: 400px;
+    transform: translate(-30%, 10px); 
   }
 }
 /* from 568px to 768px */
@@ -269,7 +287,7 @@
   .sld-sec_image_container {
     height: 200px;
   }
-  .legacyVideo-sec .modal-dialog {
+  .legacyVideo-sec .modal-dialog,   .hr-sec_video {
     width: 95%;
   }
   .legacyVideo-sec_video_container {
@@ -286,13 +304,21 @@
   }
   .discussTheProject-sec_method_container > ul > li {
     flex: 2;
-    padding: 0 20px;
   }
   .discussTheProject-sec .modal-content {
     padding: 15px;
   }
-  .discussTheProject-sec .btn-close, .legacyVideo-sec .btn-close {
+  .discussTheProject-sec .btn-close,
+  .legacyVideo-sec .btn-close {
     bottom: 20px;
+  }
+  .sld-sec_image_container {
+    height: 220px;
+  }
+  .hr-sec_video_container {
+    width: 330px;
+    left: 50px;
+    top: -115px;
   }
 }
 /* <568px */
@@ -450,8 +476,21 @@
   .discussTheProject-sec .modal-content {
     padding: 15px;
   }
-  .discussTheProject-sec .btn-close, .legacyVideo-sec .btn-close {
+  .discussTheProject-sec .btn-close,
+  .legacyVideo-sec .btn-close {
     bottom: 20px;
     top: auto;
+  }
+  .sld-sec_image_container {
+    height: 200px;
+  }
+  .hr-sec_video {
+    width: 100%;
+  }
+  .hr-sec_video_container {
+    width: 306px;
+    left: 50%;
+    margin: 0 auto;
+    transform: translate(-50%, -70px);
   }
 }

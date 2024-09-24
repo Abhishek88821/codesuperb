@@ -108,35 +108,41 @@ gsap.to(clients, {
 });
 
 // =================== timeline #3
-services.forEach((element) => {
-  gsap.from(element, {
-    scrollTrigger: {
-      trigger: element,
-      start: "top bottom",
-      toggleActions: "play none none reverse",
-      markers: false,
-    },
+  services.forEach((element) => {
+    gsap.from(element, {
+      opacity: 0,
+      y: 80,
+      duration: 1.5,
+      scrollTrigger: {
+        trigger: element,
+        start: "top bottom",
+        toggleActions: "play none none reverse",
+        onRefresh: () => {
+          gsap.set(element, { clearProps: "all" });
+        },
+      },
+    });
+  });
+
+  let t3 = gsap.timeline({});
+  t3.from(".b2blr0", {
     opacity: 0,
     y: 80,
-    duration: 1.5,
+    duration: 2,
   });
-});
 
-let t3 = gsap.timeline({});
-t3.from(".b2blr0", {
-  opacity: 0,
-  y: 80,
-  duration: 2,
-});
 
 //================= timeline #4
-projects.forEach((element) => {
-  gsap.from(element, {
+projects.forEach((project) => {
+  gsap.from(project, {
     scrollTrigger: {
-      trigger: element,
+      trigger: project,
       start: "top bottom",
       toggleActions: "play none none reverse",
       markers: false,
+      onRefresh: () => {
+        gsap.set(project, { clearProps: "all" });
+      },
     },
     opacity: 0,
     y: 80,
@@ -161,17 +167,23 @@ gsap.from(".vdo-sec", {
     markers: false,
     start: "-10% 75%",
     toggleActions: "play none none none",
+    onRefresh: () => {
+      gsap.set(".vdo-sec", { clearProps: "all" });
+    },
   },
 });
 
 //================= timeline #6
-blogs.forEach((element) => {
-  gsap.from(element, {
+blogs.forEach((blog) => {
+  gsap.from(blog, {
     scrollTrigger: {
-      trigger: element,
+      trigger: blog,
       start: "top bottom",
       toggleActions: "play none none reverse",
       markers: false,
+      onRefresh: () => {
+        gsap.set(blog, { clearProps: "all" });
+      },
     },
     opacity: 0,
     y: 80,
@@ -185,42 +197,43 @@ t6.from(".blg-sec_project", {
   duration: 2,
 });
 
+ScrollTrigger.refresh();
 //================= timeline #7 | heading
-const headingElements = document.querySelectorAll(".sec_heading_container h2");
-headingElements.forEach((heading) => {
-  const splitText = new SplitType(heading);
+// const headingElements = document.querySelectorAll(".sec_heading_container h2");
+// headingElements.forEach((heading) => {
+//   const splitText = new SplitType(heading);
 
-  const t7 = gsap.timeline({
-    scrollTrigger: {
-      trigger: heading,
-      start: "-140% center",
-      toggleActions: "play none none none",
-      markers: false,
-    },
-  });
+//   const t7 = gsap.timeline({
+//     scrollTrigger: {
+//       trigger: heading,
+//       start: "-140% center",
+//       toggleActions: "play none none none",
+//       markers: false,
+//     },
+//   });
 
-  t7.to(splitText.chars, {
-    opacity: 1,
-    y: 0,
-    stagger: 0.1,
-    duration: animationDuration,
-  });
-});
+//   t7.to(splitText.chars, {
+//     opacity: 1,
+//     y: 0,
+//     stagger: 0.1,
+//     duration: animationDuration,
+//   });
+// });
 
 // =============== timeline #8
-gsap.to(".foo-sec", {
-  opacity: 1,
-  y: 0,
-  duration: 2,
-  ease: "power4.out",
-  scrollTrigger: {
-    trigger: ".foo-sec",
-    markers: false,
-    start: "-80% 90%",
-    end: "bottom 10%",
-    toggleActions: "play none none none",
-  },
-});
+// gsap.to(".foo-sec", {
+//   opacity: 1,
+//   y: 0,
+//   duration: 2,
+//   ease: "power4.out",
+//   scrollTrigger: {
+//     trigger: ".foo-sec",
+//     markers: false,
+//     start: "-80% 90%",
+//     end: "bottom 10%",
+//     toggleActions: "play none none none",
+//   },
+// });
 
 // ============= timeline #9 | button
 const buttons = document.querySelectorAll(".btn-ani_wave");
@@ -243,6 +256,29 @@ buttons.forEach((button) => {
   button.addEventListener("mouseenter", () => t8.restart());
   button.addEventListener("mouseleave", () => gsap.set(chars, { y: 0 }));
 });
+
+// timeline #10 | innerpages
+//   gsap.from(".mai-sec_content_container", {
+//     scrollTrigger: {
+//       trigger: ".mai-sec_content",
+//       start: "top bottom",
+//       toggleActions: "play none none none",
+//       markers: false,
+//       onRefresh: () => {
+//         gsap.set(".mai-sec_content_container", { clearProps: "all" });
+//       },
+//     },
+//     opacity: 0,
+//     y: 80,
+//     duration: 1.5,
+//   });
+
+// let t10 = gsap.timeline({});
+// t6.from(".mai-sec_content_container", {
+//   opacity: 0,
+//   y: 80,
+//   duration: 2,
+// });
 
 //menu
 const menuIcon = document.querySelector(".hd-sec_hanburger_container");
