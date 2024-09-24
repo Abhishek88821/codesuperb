@@ -486,13 +486,13 @@
   }
   .hr-sec_video {
     width: 100%;
-    height: 160px;
+    height: 180px;
   }
   .hr-sec_video_container {
     width: 306px;
     left: 50%;
     margin: 0 auto;
-    transform: translate(-50%, 18px);
+    transform: translate(-50%, -10px);
     
   }
 }
