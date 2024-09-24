@@ -490,9 +490,9 @@
   }
   .hr-sec_video_container {
     width: 400px;
-    left: 45%;
+    left: 40%;
     margin: 0 auto;
-    transform: translate(-50%, -20px);
+    transform: translate(-50%, -30px);
     
   }
 }
