@@ -56,7 +56,7 @@ tl.from(
   ".hr-sec_video",
   {
     opacity: 0,
-    duration: 1.5,
+    duration: .5,
   },
   "<"
 );
