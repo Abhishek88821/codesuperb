@@ -492,7 +492,7 @@
     width: 400px;
     left: 50%;
     margin: 0 auto;
-    transform: translate(-50%, -10px);
+    transform: translate(-50%, -20px);
     
   }
 }
