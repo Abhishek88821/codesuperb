@@ -387,6 +387,7 @@ body {
 }
 
 .srv-sec_servie_name_container span,
+.fnd-sec_project_title_container p,
 .blg-sec_project_title_container h4 {
   display: -webkit-box;
   -webkit-box-orient: vertical;
@@ -495,7 +496,8 @@ body {
 .discussTheProject-sec_form_container input {
   padding: 20px;
 }
-.blg-sec_project_title_container h4 {
+.blg-sec_project_title_container h4,
+.fnd-sec_project_title_container p {
   -webkit-line-clamp: 1;
 }
 .srv-sec_servie_name_container span {
@@ -598,7 +600,8 @@ body::-webkit-scrollbar-thumb {
   padding-left: 40px;
   padding-right: 40px;
 } */
-.hd-sec_logo_container, .hd-sec_hanburger_mobile_navbar_header_logo_container {
+.hd-sec_logo_container,
+.hd-sec_hanburger_mobile_navbar_header_logo_container {
   width: 75px;
 }
 .hd-sec_arrow_container {
