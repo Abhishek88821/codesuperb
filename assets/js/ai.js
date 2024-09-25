@@ -17,22 +17,35 @@ const isMobile = window.innerWidth <= 768;
 const animationDuration = isMobile ? 0.5 : 0.2;
 
 gsap.registerPlugin(ScrollTrigger);
+// gsap.set(".preloader", { opacity: 0 });
 const hr_H1 = new SplitType(".hr-sec_heading_container h1");
 const hr_H2 = new SplitType(".hr-sec_heading_container h2");
 const clients = gsap.utils.toArray(".ct-sec_logo_image");
 const services = gsap.utils.toArray(".b2blr0");
 const projects = gsap.utils.toArray(".fnd-sec_project");
 const blogs = gsap.utils.toArray(".blg-sec_project");
-
 //timeline  #1
 let tl = gsap.timeline({});
 
-tl.to(".char", {
-  opacity: 1,
-  y: 0,
-  stagger: 0.1,
-  duration: animationDuration,
-});
+tl.to(
+  ".preloader",
+  {
+    opacity: 0,
+    duration: 1,
+  },
+  "<"
+);
+
+tl.to(
+  ".char",
+  {
+    opacity: 1,
+    y: 0,
+    stagger: 0.1,
+    duration: animationDuration,
+  },
+  "<"
+);
 tl.from(
   ".hr-sec_heading_container_second span",
   {
@@ -56,7 +69,7 @@ tl.from(
   ".hr-sec_video",
   {
     opacity: 0,
-    duration: .5,
+    duration: 1.5,
   },
   "<"
 );
@@ -108,29 +121,28 @@ gsap.to(clients, {
 });
 
 // =================== timeline #3
-  services.forEach((element) => {
-    gsap.from(element, {
-      opacity: 0,
-      y: 80,
-      duration: 1.5,
-      scrollTrigger: {
-        trigger: element,
-        start: "top bottom",
-        toggleActions: "play none none reverse",
-        onRefresh: () => {
-          gsap.set(element, { clearProps: "all" });
-        },
-      },
-    });
-  });
-
-  let t3 = gsap.timeline({});
-  t3.from(".b2blr0", {
+services.forEach((element) => {
+  gsap.from(element, {
     opacity: 0,
     y: 80,
-    duration: 2,
+    duration: 1.5,
+    scrollTrigger: {
+      trigger: element,
+      start: "top bottom",
+      toggleActions: "play none none reverse",
+      onRefresh: () => {
+        gsap.set(element, { clearProps: "all" });
+      },
+    },
   });
+});
 
+let t3 = gsap.timeline({});
+t3.from(".b2blr0", {
+  opacity: 0,
+  y: 80,
+  duration: 2,
+});
 
 //================= timeline #4
 projects.forEach((project) => {
