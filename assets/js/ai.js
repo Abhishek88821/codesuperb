@@ -17,7 +17,6 @@ const isMobile = window.innerWidth <= 768;
 const animationDuration = isMobile ? 0.5 : 0.2;
 
 gsap.registerPlugin(ScrollTrigger);
-// gsap.set(".preloader", { opacity: 0 });
 const hr_H1 = new SplitType(".hr-sec_heading_container h1");
 const hr_H2 = new SplitType(".hr-sec_heading_container h2");
 const clients = gsap.utils.toArray(".ct-sec_logo_image");
@@ -35,7 +34,6 @@ tl.to(
   },
   "<"
 );
-
 tl.to(
   ".char",
   {
@@ -211,26 +209,26 @@ t6.from(".blg-sec_project", {
 
 ScrollTrigger.refresh();
 //================= timeline #7 | heading
-// const headingElements = document.querySelectorAll(".sec_heading_container h2");
-// headingElements.forEach((heading) => {
-//   const splitText = new SplitType(heading);
+const headingElements = document.querySelectorAll(".sec_heading_container h2");
+headingElements.forEach((heading) => {
+  const splitText = new SplitType(heading);
 
-//   const t7 = gsap.timeline({
-//     scrollTrigger: {
-//       trigger: heading,
-//       start: "-140% center",
-//       toggleActions: "play none none none",
-//       markers: false,
-//     },
-//   });
+  const t7 = gsap.timeline({
+    scrollTrigger: {
+      trigger: heading,
+      start: "-140% center",
+      toggleActions: "play none none none",
+      markers: false,
+    },
+  });
 
-//   t7.to(splitText.chars, {
-//     opacity: 1,
-//     y: 0,
-//     stagger: 0.1,
-//     duration: animationDuration,
-//   });
-// });
+  t7.to(splitText.chars, {
+    opacity: 1,
+    y: 0,
+    stagger: 0.1,
+    duration: animationDuration,
+  });
+});
 
 // =============== timeline #8
 // gsap.to(".foo-sec", {
@@ -270,27 +268,27 @@ buttons.forEach((button) => {
 });
 
 // timeline #10 | innerpages
-//   gsap.from(".mai-sec_content_container", {
-//     scrollTrigger: {
-//       trigger: ".mai-sec_content",
-//       start: "top bottom",
-//       toggleActions: "play none none none",
-//       markers: false,
-//       onRefresh: () => {
-//         gsap.set(".mai-sec_content_container", { clearProps: "all" });
-//       },
-//     },
-//     opacity: 0,
-//     y: 80,
-//     duration: 1.5,
-//   });
+  gsap.from(".mai-sec_content_container", {
+    scrollTrigger: {
+      trigger: ".mai-sec_content",
+      start: "top bottom",
+      toggleActions: "play none none none",
+      markers: false,
+      onRefresh: () => {
+        gsap.set(".mai-sec_content_container", { clearProps: "all" });
+      },
+    },
+    opacity: 0,
+    y: 80,
+    duration: 1.5,
+  });
 
-// let t10 = gsap.timeline({});
-// t6.from(".mai-sec_content_container", {
-//   opacity: 0,
-//   y: 80,
-//   duration: 2,
-// });
+let t10 = gsap.timeline({});
+t6.from(".mai-sec_content_container", {
+  opacity: 0,
+  y: 80,
+  duration: 2,
+});
 
 //menu
 const menuIcon = document.querySelector(".hd-sec_hanburger_container");
