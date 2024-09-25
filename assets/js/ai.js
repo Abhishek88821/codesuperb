@@ -31,6 +31,9 @@ tl.to(
   {
     opacity: 0,
     duration: 1,
+    onComplete: () => {
+      document.querySelector(".preloader").style.zIndex = 0;
+    }
   },
   "<"
 );
